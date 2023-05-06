@@ -1,22 +1,8 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Instruction
+### Start
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `Start
-
-You may need to change url value to whatever api you are using and article accordingly 
+You may need to change url,page value to whatever api you are using and article accordingly 
 if you using news api for test you just need to put api in .env file
 
 ### Category
