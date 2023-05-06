@@ -17,3 +17,11 @@ above instruction may need to change according to api you are using but basic pr
 #Preview 
 ![image](https://user-images.githubusercontent.com/132484115/236621775-105e00d8-c237-44c0-9a7f-da8939ccd5fb.png)
 ![image](https://user-images.githubusercontent.com/132484115/236621796-41adf09f-9f5f-4783-babc-1581d768cbef.png)
+
+
+#WARNING
+The News API is a service provided by a third-party provider, and it is hosted on their servers. As a user, you can only make requests to the News API endpoints to retrieve news data, but you do not have the ability to host the API on your own server.
+
+To access the News API, you need to sign up for an account with the provider, obtain an API key, and make requests to their designated endpoints using the API key. The provider handles all the infrastructure and server-side operations necessary to provide the news data to you.
+
+Therefore, you cannot host the News API on your server, but you can integrate it into your own applications or services by making HTTP requests to the News API endpoints from your server-side code.
