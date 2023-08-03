@@ -1,3 +1,6 @@
+# for live demo 
+i put data locally , you can uncomment in News.js and use your own api and adust
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
