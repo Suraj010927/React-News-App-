@@ -2,7 +2,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 
 //  Import Bootstrap components
-import { Button, Spinner } from "react-bootstrap";
+import { Spinner } from "react-bootstrap";
 
 // Import Swiper styles
 import "swiper/css";
@@ -18,6 +18,10 @@ import { EffectCoverflow, Keyboard, Pagination, Navigation } from "swiper";
 import React, { Component } from "react";
 import NewsItem from "./NewsItem";
 import PropTypes from "prop-types";
+
+//Local data cause i can't use api for server
+import jsonDataIN from '../data/in.json';
+import jsonDataUS from '../data/us.json';
 
 export default class News extends Component {
   static defaultProps = {
@@ -49,9 +53,12 @@ export default class News extends Component {
 
   async pageUpdate() {
     this.setState({ loading: true });
-    const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&apiKey=${News.apiKey}&page=${this.state.page}&pagesize=20`;
-    const data = await fetch(url);
-    const pdata = await data.json();
+  //   const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&apiKey=${News.apiKey}&page=${this.state.page}&pagesize=20`;
+  //  const data = await fetch(url);
+  //  const pdata = await data.json();
+
+   const pdata = this.props.country === 'in' ? jsonDataIN : jsonDataUS;
+  
     
     this.setState({
       
